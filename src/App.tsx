@@ -32,6 +32,7 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/" component={Hello} />
+            <Route exact path="/coronavirus/:state" component={Hello} />
           </Switch>
         </div>
       </Router>
