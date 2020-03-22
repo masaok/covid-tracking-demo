@@ -1,0 +1,24 @@
+import gql from 'graphql-tag'
+
+export const QUERY_DAILY_STATE_DATA = gql`
+  query DailyStateData($id: String!) {
+    state(id: $id!) {
+      id
+      name
+      covidResource {
+        name
+        state
+        total {
+          positive
+          dateModified
+          dateChecked
+        }
+        daily {
+          positive
+          dateModified
+          dateChecked
+        }
+      }
+    }
+  }
+`

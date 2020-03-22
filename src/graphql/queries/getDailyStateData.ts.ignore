@@ -1,0 +1,24 @@
+import gql from 'graphql-tag'
+
+export const GET_DAILY_STATE_DATA_SUBSCRIPTION = gql`
+  subscription($id: String!) {
+    state(where: { id: { _eq: $id } }) {
+      idjkk
+      name
+      covidResource {
+        name
+        state
+        total {
+          positive
+          dateModified
+          dateChecked
+        }
+        daily {
+          positive
+          dateModified
+          dateChecked
+        }
+      }
+    }
+  }
+`

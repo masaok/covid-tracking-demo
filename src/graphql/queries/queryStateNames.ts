@@ -1,7 +1,7 @@
 import gql from 'graphql-tag'
 
-export const GET_STATE_NAMES = gql`
-  {
+export const QUERY_STATE_NAMES = gql`
+  query StateNames {
     states(ids: ["CA"]) {
       name
     }
