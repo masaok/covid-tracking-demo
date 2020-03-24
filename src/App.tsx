@@ -4,7 +4,7 @@ import './App.css'
 // import SimpleLineChart from './examples/SimpleLineChart'
 // import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
 // import { ThemeProvider } from '@material-ui/styles'
-import Hello from './pages/Hello'
+import Demo from './pages/Demo'
 
 import {
   BrowserRouter as Router,
@@ -31,8 +31,8 @@ function App() {
         {/* <div className={classes.root}> */}
         <div>
           <Switch>
-            <Route exact path="/" component={Hello} />
-            <Route exact path="/coronavirus/:state" component={Hello} />
+            <Route exact path="/" component={Demo} />
+            <Route exact path="/coronavirus/:state" component={Demo} />
           </Switch>
         </div>
       </Router>

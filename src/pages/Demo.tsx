@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { useSubscription } from '@apollo/react-hooks'
+// import { useSubscription } from '@apollo/react-hooks'
 
 import SimpleLineChart from '../examples/SimpleLineChart'
 import { fetchStates } from '../api/endpoints'
 // import { GET_DAILY_STATE_DATA_SUBSCRIPTION } from '../graphql/queries/getDailyStateData'
-import { QUERY_DAILY_STATE_DATA } from '../graphql/queries/queryDailyStateData'
+// import { QUERY_DAILY_STATE_DATA } from '../graphql/queries/queryDailyStateData.ts.ignore'
 
 // Interface for incoming props via match.params (URL params)
 interface HelloProps {
@@ -53,8 +53,8 @@ interface StateList extends Array<State> {}
 const Hello = (props: HelloProps) => {
   // https://tylermcginnis.com/react-router-url-parameters/
   // const data = DailyStateDataSubscription('CA')
-  console.log('DATA:')
-  console.log(data)
+  // console.log('DATA:')
+  // console.log(data)
 
   // Loading boolean allows UI to change while we wait for data
   const [loading, setLoading] = useState(false)
